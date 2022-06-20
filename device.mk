@@ -40,5 +40,9 @@ PRODUCT_PACKAGES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH)
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
