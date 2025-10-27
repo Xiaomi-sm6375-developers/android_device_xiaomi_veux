@@ -1,4 +1,6 @@
 # All unpinned blobs below are extracted from OS1.0.12.0.TKCMIXM (VEUXGlobal)
+# veux_cn: V14.0.5.0.TKCCNXM (VEUX)
+# veux_jp: V14.0.4.0.TKCJPXM (VEUX)
 
 # Camera
 vendor/lib/libcamxexternalformatutils.so
@@ -325,3 +327,25 @@ vendor/etc/camera/morpho_lowlight_2.0_sunny_s5khm2_main_i_8x.xml
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/vidhance_kernel1.bin
 vendor/etc/camera/vidhance_kernel2.bin
+
+# NFC
+vendor/etc/init/init.veux.nfc.rc
+vendor/etc/libnfc-nci.conf:vendor/etc/libnfc-nci-pn557.conf;FIX_SONAME
+vendor/etc/libnfc-nxp.conf:vendor/etc/libnfc-pn557.conf;FIX_SONAME
+vendor/lib64/libpn557_fw.so
+
+# Sensors Configurations
+vendor/etc/sensors/config/veux_qrd_ak991x.json
+vendor/etc/sensors/config/veux_qrd_bu27030.json
+vendor/etc/sensors/config/veux_qrd_icm4x6xx.json
+vendor/etc/sensors/config/veux_qrd_lsm6dso_0.json
+vendor/etc/sensors/config/veux_qrd_qmc6308.json
+vendor/etc/sensors/config/veux_qrd_sx933x.json
+
+# EUICC - from veux_jp
+product/priv-app/EuiccGoogle/EuiccGoogle.apk|2d238bfe14473b8f578bf0d4ea61246f61d0f618
+
+# Felica - from veux_jp
+vendor/etc/felica/common.cfg|ca6ccc74d3e115f4f522d670f64ce7d389b18741
+vendor/etc/felica/mfm.cfg|4c373c800a0a09f678b0f09fb9a3226121f02921
+vendor/etc/felica/mfs.cfg|0adfe851cbe62db27c91bcf314bb708b64059af9
